@@ -1,0 +1,85 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-- FONT WEIGHT
+Default: 400, 
+Medium:500, 
+semi-bold:600,
+Bold:700
+
+--- LINE HEIGHTS:
+  DEFAULT: 1
+  1.8
+  2.4
+
+--- 02 COLORS
+#fff
+#000
+ --- 05 SHADOWS
+#777
+
+ -- SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* Note Component */
+
+.note {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.8rem;
+  width: 34rem;
+  margin: 1.6rem;
+  border: 2px solid #f9f6f6;
+  transition: all 0.4s;
+}
+
+.note:hover {
+  border: none;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.note h1 p {
+  color: #000;
+}
+
+.note h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.8rem;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.note p {
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+  font-weight: 400;
+  line-height: 2.4;
+}
+
+.note-buttons {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: right;
+  align-items: center;
+}
+
+.note-buttons-delete,
+.note-buttons-edit {
+  background-color: #fff;
+  border: none;
+  color: #777;
+  border-radius: 0.8rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  cursor: pointer;
+  outline: none;
+}
